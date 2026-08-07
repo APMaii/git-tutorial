@@ -335,14 +335,25 @@ tooye deksotp ba touch misazam badsh baz mikonm o toosh minevisak
 ```
 
 
+------
+# Overview
 
-
-
-
-
-
-
-
+| Command | Example | che mikonad? |
+|---------|---------|--------------|
+| `pwd` | `pwd` | neshan midahad kojaeid |
+| `cd` | `cd desktop` | mire be folderi k mikhahid |
+| `cd ..` | `cd ..` | bar migarde ye folder aghab|
+| `ls` | `ls` | list mikone tamame folder haye jaei ke toosh hastid|
+| `mkdir` | `mkdir project1` | new folder misaze|
+| `touch` | `touch l1.py` | yek file e khali misaze |
+| `vim` | `vim l1.py` | baz mikone ya misaze yek file va mitoni benevisi (`i` → benevis → `ESC` → `:wq` enter) |
+| `cat` | `cat l1.py` | namayesh mide dakhele yek file ro  |
+| `rm` | `rm l1.py` |yek file ro delete mikone |
+| `rm -rf` | `rm -rf folder1` | yek folder ba tamame file haye toosho delete mikone |
+| `python3` | `python3 l1.py` | run mikone yek python file ro  |
+| `python3 -m venv` | `python3 -m venv fanavari` | yek mohit misaze |
+| `source .../activate` | `source fanavari/bin/activate` | oon mohit ro activate mikone (faal mikone)|
+| `deactivate` | `deactivate` | oon mohit ro deactivate miikne |
 
 
 
