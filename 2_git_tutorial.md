@@ -1,23 +1,11 @@
 # Git tutorial
 
-
-
 Ta inja ma ba CLI yad gerefgtim doostan ke chijori berim bebinim kojaheim, varede folder beshim , back bezanim , folder besazim, file besazim, too file benvisim , tooye folder bebinim chia hast, tooye file bebinim chia hast , file ro mohtaviatesho bbin, hazf konim file , hazf konim folder, mohit besazam, mohito activate konim , va hamchnin yek file pythjon ro run bznim 
 
 
-vaghty man yek project zadam project1 , 
+Mikahm yek project besazam, pas yek folder misazam bename project1 va dakhelesh miram va dot afile misazam a1.py va a2.py
 
-```bsh
-(base) apm@APMs-MacBook-Pro desktop % pwd
-/Users/apm/desktop
-(base) apm@APMs-MacBook-Pro desktop % mkdir project1
-(base) apm@APMs-MacBook-Pro desktop % cd project1
-(base) apm@APMs-MacBook-Pro project1 % pwd
-/Users/apm/desktop/project1
-
-```
-
-dota file a1.py a2.pysakhtamo karamo krdm
+va miram tooye a1.py o a2.py code mizanam.
 
 
 ```bsh
@@ -42,6 +30,10 @@ print('salam dostan khobid?')
 ```
 
 
+bad az ye tiem e , miam dobare a1.py ro taghir midam brjaye ye print(salam) e sade, omadam codesh ro khafan tar kardam.
+
+
+
 ```bsh
 (base) apm@APMs-MacBook-Pro project1 % cat a1.py
 answer = input('aya shoma run mikonid? (y/n)')
@@ -59,6 +51,8 @@ else:
 
 
 runesh mikoni
+
+
 ```bsh
 (base) apm@APMs-MacBook-Pro project1 % pwd
 /Users/apm/desktop/project1
@@ -81,8 +75,8 @@ salam
 
 ```
 
+dobare miam file a2.py ro taghir dadam bejaye yek chize sade, oomadam az yek loop o repeat o in chiza estefade krdm 
 
-miam migam file a2.py ro tyaghir bde
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project1 % python3 a2.py
@@ -103,6 +97,8 @@ khodafez
 ```
 
 
+Be koja mikhahim beresim? bahs ine ke baraye yek porozheye sade dah ha file ma misazimo har kodom ro chandin bar taghir midahim.
+
 
 ey kash bargardam b 10 daghigheye ghabl , yani aval ey kash har file i k sakhte bodm , har file y tozi midadam, tarikh dasht 
 
@@ -115,9 +111,7 @@ ey kash bargardam b 10 daghigheye ghabl , yani aval ey kash har file i k sakhte 
 
 20:37 --> a1.py --> print('salam') -->comment : aval mikhastaj check konim
 
-
-
-project managme ment mikrdi
+project managmement mikrdi
 
 
 Ali , danial , mohsen
@@ -135,6 +129,11 @@ Ali , danial , mohsen
 
 
 Linus trovalds (finnish-american scientist) oomad baraye ye porozhe e mizad , oon porozhe ro contorl kone ba refigehsh --> git ro sakht.
+
+
+![linus](https://avatars.githubusercontent.com/u/1024025?v=4)
+
+
 
 
 hich chizi hich codi ,hcih sazmani hich chzii bedone git ghabele control nist.
@@ -165,6 +164,16 @@ open source -> distribution mokjtalef --> GUI ,,....
 
 
 
+
+----------
+----------
+----------
+# Nasbe Git (windows , Mac)
+
+
+
+### Mac Install ---> 
+
 terminalo miari baal --> brew install git
 
 brew--> abzare migi agha install git ro
@@ -193,7 +202,7 @@ git --version
 
 
 
-baraye **windows**
+###  baraye **windows**
 
 
 https://git-scm.com
@@ -218,6 +227,19 @@ git --version
 ```
 
 
+
+
+
+
+
+----------
+----------
+----------
+# Amoozeshe Git
+
+
+----
+## git init 
 
 yek projhect misazam bename project_f --> fresh -->taze
 
@@ -288,8 +310,8 @@ yek file besaz
 a1.py
 ```
 
-
-### git status
+----
+## git status 
 
 ch chizhaee taghir krdn ya sakhte shodn ya remove shodan , shoma inaro sabt nakardid 
 
@@ -432,6 +454,8 @@ git status --> git add . ---> git commit -m ''
 
 
 
+----
+## git log
 
 mikhahi tarikhche ro bbini --> git log
 
@@ -606,6 +630,9 @@ index d504937..7988e1a 100644
 ```
 
 
+---------------
+# github
+
 
 hameye ina rooye laptabete va khob dari manage mikoni file
 
@@ -615,6 +642,7 @@ mikhay kole folder fila , commit haro dar yek website bezari , k hame (cloud) da
 
 
 company , ba company trf kar koni , kar kone  , roo yechizi kar konid ,...
+
 
 
 
@@ -628,16 +656,29 @@ github--> hub k git kar mikoni
 
 https://github.com
 
-sign up --> sabte nam mikoni
 
+vaghty vared mishi, oon samte rast bala rooye sign up mizani
+
+![home](/tutorial_figs/github_home.png)
+
+
+badesh sign up mikoni yani sabte nam mikoni
 
 sign in --> yek email --> verification (code) 
 
 emailet--> peydaah mikoni --> va avred --> vared mishi (spam ,...)
 
-
 login --> in dg mimone
 
+
+
+![signup](/tutorial_figs/github_signup.png)
+
+
+
+
+
+dg azinbebasd harmoghe ino mizani miri too safeye home 
 
 https://github.com
 
@@ -675,6 +716,17 @@ bia ino brizam github chi mishe mage ?
 miri github , home , samte chap , green button (sabz) new
 
 
+![new_repo](/tutorial_figs/new_repo.png)
+
+
+
+
+![new_repo2](/tutorial_figs/new_repo2.png)
+
+
+
+
+
 
 
 git branch -M main <br>
@@ -683,6 +735,13 @@ git remote add origin https:....(address)
 
 git push -u origin main
 
+
+
+
+
+in addrees hmaine ke inja neveshte
+
+![link_repo](/tutorial_figs/link_repo.png)
 
 
 ```bsh
@@ -795,15 +854,21 @@ To https://github.com/APMaii/project_f.git
 
 
 
+
+
+
 # halate 2 -------------
 yek chizi rooye github hast va mikhay begirish va roosh kar koni
-
 
 mikhay biarish --> git clone --> clone krdn
 
 
 
+![clone](/tutorial_figs/clone_pic.png)
+
 raftam desktopam , copy krdm linke oon repository ro 
+
+
 
 
 git clone url
@@ -1069,6 +1134,76 @@ git push origin main
 ```
 
 
+
+
+-------
+# Token generation (User password)
+
+dar har kojaye kar k azat user password khast shoma bayad inkaro anjam bedi
+
+
+
+
+Gahan shoma vaghty khastid ba github kar konid
+momkene b moshkel bokhori banabar in niaze ke
+user password bezanid.
+
+kojaha?
+- vaghty mikhayd git clone bznid
+- vaghty mikkhayd push konid 
+- vaghty mikhayd remote vasl konid
+
+khob dar insorat azatoon *user* va *password* mikhad ama shoma
+yek bar k baratoon omad, bayad yekari koni user password ro bezanid
+va badesh yekar konid ta abad in remember beshe. 
+yadeton bashe *versione jadide* github password nemigire, balke
+joloye **password** bejhaye password, bayad **token** bezanid.
+pas aval varede githubeton beshid
+
+
+Khob aval mirid toye github , rooye samte rast profile click konid va
+setting ro entkehab konid
+
+<img src="tutorial_figs/setting.png" width="200" alt="setting">
+
+
+badesh kafie scroll konid paeen , tahe tah , samte chaop yek 
+developer setting ro mibinid bznid roosh
+![DV](tutorial_figs/developer_settings.png)
+
+badesh kafie rooye personal acces token ha bznid va baz mishe va rooye token(classic) cliuck konid
+![p token](tutorial_figs/personal_token.png)
+
+badesh shoma mitonid bezanid k rooye generte 
+![geenrate](tutorial_figs/generate_token.png)
+
+
+badesh mitonid inja note bzarid k yadeton bashe in token ro chra skahtid, mitonid behesh zaman bdid (choon monghazi mish) va bayad bgid cheghad mikhahid
+![note token](tutorial_figs/note_token.png)
+
+badesh kafie bezanid option haro bdid , in option ha mige k ba in token , cheghadr mitond dastrssi b github dashte bashid, ag roo lapttobe khdoton has, hame tik haro bezanid rahat
+![option token](tutorial_figs/options_token.png)
+
+dar enteha rooye submit bezanid va vaghty roo submit mizanid
+![submit token](tutorial_figs/submit_token.png)
+
+hala behetoon y adad mide k hamin addad **Token** e shoma hast
+va vaghty github shoma *git pull* *git clone* ya harkari krdiid azaton
+user ya password khast , bejaye **password** shoam bayad **token** bezanid.
+**KH MOHEM**
+**yadtoon bashe ke in token ro yekbar b shoma namayesh mdie github, pas copy krdid estefade krdid , dg neshon nmide  behetoon va majbooriddobare yedone dg besazid**
+
+badesh ba yeki az command haye zir , baraye hamishe user passeton
+save mishe va khialeton rahate
+
+```bsh
+git config --global credential.helper manager
+```
+or
+
+```bsh
+git config --global credential.helper store 
+```
 
 
 
