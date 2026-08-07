@@ -24,6 +24,11 @@ Command Line interface -->  CLI
 yani yek safe meshki jolomon bashe va ba oon kar konim...
 
 
+
+
+![cli_terminal](/tutorial_figs/terminal.png)
+
+
 aksare developer ha az CLI estefade mikonan na GUI , vaghty migim server gerefte --> yek windowsi --> yek keshvari , yek sherkati , yek tabaghe ei , computer majazi dar ekhtiare shoma gharar mide.
 
 
