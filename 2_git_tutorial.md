@@ -837,8 +837,6 @@ miay roo laptabet --> taghirateto midi
 
 git status --> esme file sakhte shode, taghir ,,...
 
-
-
 git add a1.py -->
 
 git commit -m 'man dota for gozashtam'
@@ -848,11 +846,7 @@ git commit -m 'man dota for gozashtam'
 git push origin main
 
 
-
-
-
-
-hardae mikhay beshini pa kar --> avl update begiri -->
+hardafe mikhay beshini pa kar --> aval update begiri -->
 
 git pull origin main (pull kon beeksh)
 
@@ -974,21 +968,14 @@ inja file photo --> yadbegiuri ---> password dar biri
 
 
 
-
-
-
-----------------------
-----------------------
-----------------------
-----------------------
-#
+### Bache haye Python 06
 
 1--> file haye tadris ro dashte bashid 
 
 github --> url ro dar miarid
 
 
-py06 -->
+py06 --> https://github.com/Fanavarico/Python140504-Py06.git
 
 
 ```bsh
@@ -1006,9 +993,10 @@ Resolving deltas: 100% (3/3), done.
 
 ```
 
+### Bache haye Python 07
 
 
-py07 -->
+py07 --> https://github.com/Fanavarico/Python140505-Py07.git
 
 ```bsh
 (base) apm@APMs-MacBook-Pro desktop % pwd
@@ -1051,6 +1039,9 @@ From https://github.com/Fanavarico/Python140505-Py07
 Already up to date.
 
 ```
+
+
+
 
 
 
@@ -1163,11 +1154,7 @@ git push -u origin main
 Uswer pass azat bekahd --> Username github , password --> yek ravsh dare --> ba ax mizaram --> 2390719376981276q93219673926912692816739832167 
 
 
-
-
-
 tamame folderet ba github yeki mishe
-
 
 
 ```bsh
@@ -1198,6 +1185,35 @@ git commit -m 'benevisish'
 ```bsh
 git push origin main
 ```
+
+
+
+
+------
+
+# Ghazieye Push Pull
+
+Shoma yekbar faghat bayad laptabeton ro ba oon github vasl konid.
+
+laptabeton esmesh hast working directroy ya local va oon github hast remote repository.
+
+
+yekbar oon akhti haro dare. az in bebad harmoghe bekhahid chizi az laptobe khodetoon (local) befrestiid be samte github (remote repository) kafie bezanid :
+
+```bsh
+git push origin main
+```
+
+
+age bekhahid harchi az github hast (remote rpository) biad va update beshe rooye laptobe khodetoon (local) bayad bezanid :
+
+```bsh
+git pull origin main
+```
+
+
+
+![push_pull](https://rawbinn.com/static/images/blogs/how_git_works.svg)
 
 
 
