@@ -1,5 +1,6 @@
 # CLI (Command Line Interface)
 
+![cli_wall](https://www.reddit.com/media?url=https%3A%2F%2Fexternal-preview.redd.it%2Fa-wallpaper-for-all-my-fellow-penguins-out-there-2560-x-1440-v0-EiTkCp5sISZjC_MVVtVHs8Bj4DSkzLV1VP1IUjcWALY.jpg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3Dd7c01f08411a437b6ccbba2ad7547a6c6d61fa2e)
 
 
 Windows (mac, microsoft) , shoma yechizi darid bename GUI (graphical user interface)

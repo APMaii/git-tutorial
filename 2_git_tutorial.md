@@ -281,50 +281,57 @@ va agar version dad khialeton rahat bashe ke git ro nasb kardid va edame bedid b
 ----
 ## git init 
 
-yek projhect misazam bename project_f --> fresh -->taze
+yek porozheye jadid aval misazim, esme folderemoon ro mizarim project_f . f be manaye fresh (yani taze va jadid)
+
 
 ```bsh
 (base) apm@APMs-MacBook-Pro desktop % pwd
 /Users/apm/desktop
+
 (base) apm@APMs-MacBook-Pro desktop % mkdir project_f
+
 (base) apm@APMs-MacBook-Pro desktop % cd project_f
+
 (base) apm@APMs-MacBook-Pro project_f % pwd
 /Users/apm/desktop/project_f
 
 ```
 
-mikham begam k agha lotfan foldere mano negahbani kon azash --> chashm , hamechizo check kon
+Mikham hala be **GIT** begam aghaye git lotfan az in folderi ke sakhtam lotfan negahdari kon, yani deghat kon che kar haei roosh anjam mishe va hamechiz ro sabt kon. va folder ro manage (modiriat) kon
 
 
-folder ro management (modiritaesho) dsaste git
-
+kafie in kar ro ba **git init** anjam dahid.
 
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % git init
+
 Initialized empty Git repository in /Users/apm/Desktop/project_f/.git/
 
 ```
 
-git init --> toye fodleri k mikhahi kolesho manage koni
+git init --> toye fodleri k mikhahi kolesho maanag(modiriat) koni
 
 
-miad yek file msiaze bename .git
+miad yek file msiaze bename .git , in file ro hichvaght nemibini choon penhane ama in file hast k tamame foldereto manage mikone.
+
+Manie Initial yani Shoroo.
 
 
+chiz haee mesle .git .gitignore .env .env_exampl .claud ,... -- nemiare too ls , fgth bayad cat
 
-initial -> shoro
 
-
-chizhae mesle .git .gitignore .env .env_exampl .claud ,... -- nemiare too ls , fgth bayad cat
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % ls  
 ```
 
 
+
+
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % cd .git
+
 (base) apm@APMs-MacBook-Pro .git % ls
 HEAD		hooks		refs
 config		info
@@ -333,8 +340,7 @@ description	objects
 ```
 
 
-
-
+Hala bar migardim bebinim kojaeim? tooye project_f hastim
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % pwd
@@ -342,13 +348,18 @@ description	objects
 
 ```
 
+Bia yek file besaz bename a1.py 
 
-yek file besaz
+
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % touch a1.py
 (base) apm@APMs-MacBook-Pro project_f % ls
 a1.py
 ```
+
+
+
+
 
 ----
 ## git status 
@@ -370,10 +381,30 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ```
 
-mige tooye branch (shakhe aslit) , no commit --> commit sabt nashdoe, untracked file --> man in aro track (taghir,sakhtre , hazf)
+mige tooye branch (shakhe aslit) , no commit --> commit sabt nashode, untracked file --> man inaro track (taghir,sakhtre , hazf)
 
 
-biam track --> staging (mesle sabade kharid)
+biam track --> staging (mesle sabade kharid hast)
+
+
+Bebinid Kolan vaziate file ha injorie, shoma se halat dariid ya Untracked (yani aslan git kari bahatoon nadari) . ya tooye yek vaziati hastid bename **stage** ya shoma **commit** shodid
+
+- Untracked : yani ya taghir kardid (modified) , sakhte shodid (created) , ya hazf shodid (remoevd) ama git felan kari bahaton nadare va azadid ta karetoon tamom she anjam bedid
+
+- Stage : inja yani shoma oon file k sakhtid ya taghir dadid ro mindazid toye yek marhale ee ghabl az inke sabte nahaei konid, mesle sabade kharid ghabl az pardakht
+
+- Commit : inja dg jaei hast k dg sabte naahei mikonid yani sabt mikonid taghire fileton ro , tarikho esmo comment mizanid
+
+
+![three_stage](https://content-media-cdn.codefinity.com/courses/7533d91f-0a23-44a3-afc7-c84d5072e189/section_1/chapter_9/files_classification.png?w=3840&q=75)
+
+
+
+
+
+
+
+Baraye ezafe kardan yek file (a1.py) az **untracked** be **stage** kafie az dastoore **git add file** estefade konid va bejaye file az esme filetoon estefade konid.
 
 
 ```bsh
@@ -382,6 +413,9 @@ biam track --> staging (mesle sabade kharid)
 
 yani file a1.py ro briz too sabade stage
 
+
+
+Hala baraye inke motmaen shavid az **git status** estefade konid bebinid chekahabre
 
 
 ```bsh
@@ -407,19 +441,20 @@ taghir
 
 
 
-
-
 git status --> file --> a1.py --> untracked 
 
 
 git add a1.py --> beriz too stage
 
 
+az stag e--> commit (sabt konm)
 
-az stag e--> comit (sabt konm)
 
+Hala vase inke az stage (sabad kharid) sabt konid kafie az dastoroe zir estefade konid
 
 git commit -m 'tozih'
+
+
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % git commit -m 'ebtedaei file a1 ro sakhtam'
@@ -429,6 +464,8 @@ git commit -m 'tozih'
 
 ```
 
+
+hala dar akahr yekbar dg git status bezanid va hichi nemibinid yani hamechi sabt shod .
 
 
 ```bsh
@@ -440,10 +477,14 @@ nothing to commit, working tree clean
 
 
 
-raftam a1.py taghir dadam
+#### Yek mesale digar
 
+Hala dobare vase inke dobare tekrar konim yek mesale digar mizanim
+
+raftam a1.py ro taghir dadam
 
 git status mizni bbini chekhaabre
+
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % git status
@@ -458,13 +499,16 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ```
 
-a1.py taghir dade shdoe --> Untracked
+a1.py taghir dade shode --> pas rafte tooye **Untracked**
+
+ 
+har zaman taghgiram tamom  shod mindazamesh stage (sabade kharid) badesh sabtesh mikonm (commit)
 
 
-har zaman taghgiram tamom 
+git add --> stage <br>
+git commit --> sabt (comment) <br>
 
-git add --> stage
-git commit --> sabt (comment)
+![commit](https://content-media-cdn.codefinity.com/courses/7533d91f-0a23-44a3-afc7-c84d5072e189/section_1/chapter_9/files_classification.png?w=3840&q=75)
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % git add a1.py

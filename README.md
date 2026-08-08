@@ -5,6 +5,10 @@ The tutorial covers essential concepts including: Command Line Interface (CLI) f
 The content is provided in two languages, with the primary focus on Persian and Finglish (Persian written using English characters) to make the material more accessible and easier to follow for Persian-speaking learners.<br>
 Created by Ali Pilehvar Meibody , August 2026 , Iran
 
+
+![git_tutorial](https://cdn.hashnode.com/res/hashnode/image/upload/v1679035484818/591e9a1b-4a96-4d78-a60b-2bdc4d9c0dbf.webp)
+
+
 ---
 # راهنمایی پروژه
 
