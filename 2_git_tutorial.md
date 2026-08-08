@@ -1,9 +1,17 @@
 # Git tutorial
 
-Ta inja ma ba CLI yad gerefgtim doostan ke chijori berim bebinim kojaheim, varede folder beshim , back bezanim , folder besazim, file besazim, too file benvisim , tooye folder bebinim chia hast, tooye file bebinim chia hast , file ro mohtaviatesho bbin, hazf konim file , hazf konim folder, mohit besazam, mohito activate konim , va hamchnin yek file pythjon ro run bznim 
+Ghabl az in file , shoma bayad file **1_CLI.md** ro dide bashid.
 
 
-Mikahm yek project besazam, pas yek folder misazam bename project1 va dakhelesh miram va dot afile misazam a1.py va a2.py
+----------------
+## Introduction (Moghadam) 
+
+Ta inja ma ba CLI yad gereftim  ke chijori berim bebinim kojaeim, varede folder beshim , back bezanim , folder besazim, file besazim, too file benvisim , tooye folder bebinim chia hast, tooye file bebinim chia hast , file ro mohtaviatesho bbin, hazf konim file , hazf konim folder, mohit besazam, mohito activate konim , va hamchnin yek file python ro run bznim 
+
+
+
+
+hala mikham yek porozhe (project) besazam, pas yek folder misazam bename project1 va dakhelesh miram va 2 ta file misazam bename a1.py va a2.py
 
 va miram tooye a1.py o a2.py code mizanam.
 
@@ -11,26 +19,35 @@ va miram tooye a1.py o a2.py code mizanam.
 ```bsh
 (base) apm@APMs-MacBook-Pro desktop % pwd
 /Users/apm/desktop
+
 (base) apm@APMs-MacBook-Pro desktop % mkdir project1
+
 (base) apm@APMs-MacBook-Pro desktop % cd project1
+
 (base) apm@APMs-MacBook-Pro project1 % pwd
 /Users/apm/desktop/project1
+
 (base) apm@APMs-MacBook-Pro project1 % ls
+
 (base) apm@APMs-MacBook-Pro project1 % touch a1.py
+
 (base) apm@APMs-MacBook-Pro project1 % vim a1.py
+
 (base) apm@APMs-MacBook-Pro project1 % cat a1.py
 print('salam')
+
 (base) apm@APMs-MacBook-Pro project1 % vim a2.py
+
 (base) apm@APMs-MacBook-Pro project1 % ls
 a1.py	a2.py
+
 (base) apm@APMs-MacBook-Pro project1 % cat a2.py
 print('salam dostan khobid?')
-
 
 ```
 
 
-bad az ye tiem e , miam dobare a1.py ro taghir midam brjaye ye print(salam) e sade, omadam codesh ro khafan tar kardam.
+bad az gozashte zaman , miam dobare a1.py ro taghir midam bejaye ye print(salam) e sade, omadam codesh ro khafan tar kardam.
 
 
 
@@ -56,11 +73,14 @@ runesh mikoni
 ```bsh
 (base) apm@APMs-MacBook-Pro project1 % pwd
 /Users/apm/desktop/project1
+
 (base) apm@APMs-MacBook-Pro project1 % ls
 a1.py	a2.py
+
 (base) apm@APMs-MacBook-Pro project1 % python3 a1.py
 aya shoma run mikonid? (y/n)n
 khodafez
+
 (base) apm@APMs-MacBook-Pro project1 % python3 a1.py
 aya shoma run mikonid? (y/n)y
 salam
@@ -86,6 +106,7 @@ salam
 salam
 salam
 salam
+
 (base) apm@APMs-MacBook-Pro project1 % python3 a2.py
 aya shoma run mikonid? (y/n)n
 khodafez
@@ -100,23 +121,22 @@ khodafez
 Be koja mikhahim beresim? bahs ine ke baraye yek porozheye sade dah ha file ma misazimo har kodom ro chandin bar taghir midahim.
 
 
-ey kash bargardam b 10 daghigheye ghabl , yani aval ey kash har file i k sakhte bodm , har file y tozi midadam, tarikh dasht 
+ey kash mitonestam az aval ke har file misakhtam, etealaatesho zakhire dashtam, har file che kari kardam , comment mizashtam, tarikh dasht , ey kash aslan mitonestam bargardam b verzhene 10 daghigheye ghabl ( agar jaei eshtebah kardam)
 
 
+Yek chizi mesle :
 
 20:30 14 mordad , folder project1 -->comment : besmella shoroe prozhe
-
 
 20:35 a1.py ro sakhti k khalie --> coment : avalin file khalie a1 
 
 20:37 --> a1.py --> print('salam') -->comment : aval mikhastaj check konim
 
-project managmement mikrdi
+project managmement (modiriate porozhe) mikrdi
+
 
 
 Ali , danial , mohsen
-
-
 
 20:30 14 mordad , Ali --> folder project1 -->comment : besmella shoroe prozhe
 
@@ -128,7 +148,12 @@ Ali , danial , mohsen
 
 
 
-Linus trovalds (finnish-american scientist) oomad baraye ye porozhe e mizad , oon porozhe ro contorl kone ba refigehsh --> git ro sakht.
+
+
+----------------
+## Git Emergence (Zohoore GIT)
+
+Linus trovalds (finnish-american scientist) oomad baraye ye porozhe e mizad , oon porozhe ro contorl kone ba refighesh --> git ro sakht.
 
 
 ![linus](https://avatars.githubusercontent.com/u/1024025?v=4)
@@ -140,24 +165,22 @@ hich chizi hich codi ,hcih sazmani hich chzii bedone git ghabele control nist.
 
 
 
-abzari misazam (tool) -> Git --> in miad system version controlling --> miad baray shoam yek folder ro mispari behesh miad onja shoro mikone va har taghiri ro negah midare
+abzari misazam (tool) -> Git --> in miad system version controlling --> miad baraye shoma yek folder ro mispari behesh miad onja shoro mikone va har taghiri ro negah midare va sabt mikone
 
-hamaro time mzine,m taghirato minevisi , user ,
+hamaro time mzine, taghirato minevisi , user ,
 
 badesh omad --> barnagardim b version 4 roz pish --> chra natonm file amo taghir bdmn
 
-branch (shakhe bezana) movazi kar konan
+branch (shakhe bezanam) movazi kar konam va .. koli ghabeliat
 
 
-khodesh mige man git ro kh chiasho nadonm 
-
-
-(Open source)
+(Open source) yani matn baz hast
 
 
 
-Linux --> linus --> Operating system (OS) ,mac, window --> bbin cheghadr khafane tamame abar computer, seevrea , harchizi ---> Blaaye 90% roye linux hast
+Esme Linus ke yek system amel hast (Operating system (OS)) az khode linus (sazande ye git omd) . Linux || Linus
 
+bbin cheghadr khafane tamame abar computer, seevrea , harchizi ---> Blaaye 90% roye linux hast
 
 
 open source -> distribution mokjtalef --> GUI ,,....
@@ -174,26 +197,30 @@ open source -> distribution mokjtalef --> GUI ,,....
 
 ### Mac Install ---> 
 
-terminalo miari baal --> brew install git
+terminalo miari bala toosh minevisi 
+```bsh
+brew install git
+```
 
-brew--> abzare migi agha install git ro
+brew--> abzare migi agha install kon  git ro
 
 
-brew ro ndrii --> 
+age error dad o ghermez nevesht k brew ro nadari bayad aval abzare **brew** ro nasb koni
 
 ```bsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ```
 
-chan daghigeh tool mikeshe brew ro mirize --> baraye mac --> abzar dwoanlod
-
+chan daghigeh tool mikeshe brew ro mirize --> baraye mac --> abzar downloade abzar hast. badesh ino mizani
 
 
 ```bsh
 brew install git
 ```
 
+
+baraye inke motmaen shi k git nasb shode kafie bezani : 
 
 ```bsh
 git --version
@@ -202,19 +229,22 @@ git --version
 
 
 
+
+
 ###  baraye **windows**
 
+Avaal miri too in website 
 
 https://git-scm.com
 
-mizani isnatll for windows -->  nex next next 
+mizani install for windows -->  download mikoni
 
-gozine omd --> Kodom ide (editor)--> VS Code
+miri jaei ke download shode va doone done gozine next next mizani ta install beshe ( age sakhtete boro youtube va search bezan tarigheye nasbesho)
+
+vasate nasb age gozine oomad --> Kodom IDE(editor)--> mitoni bezani VS Code
 
 
-طریقه دانلود گیت برای ویندوز
-youtube --> nasbesho bbinid
-
+Bad az inke nasb moafagh anjam shod . mitoni beri samte chap paein
 
 
 dakhele start menu(samte chap) --> Git bash --> esme appete
@@ -227,7 +257,7 @@ git --version
 ```
 
 
-
+age versiono inaro behet dad yani doros nasb shode
 
 
 
@@ -236,6 +266,16 @@ git --version
 ----------
 ----------
 # Amoozeshe Git
+
+
+Pas ghabl az inke bekhahid yad begirid k Git che shekli hast , shoma bayad aval dakhele terminal ya git bsh benevisid
+
+```bsh
+git --version
+```
+
+va agar version dad khialeton rahat bashe ke git ro nasb kardid va edame bedid b amoozeshetoon
+
 
 
 ----
