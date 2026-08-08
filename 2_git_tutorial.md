@@ -3,6 +3,10 @@
 Ghabl az in file , shoma bayad file **1_CLI.md** ro dide bashid.
 
 
+
+![git_tutorials](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqqzIYtqerRhx_JSbLKCaUwzCekKi2XLGOIGI6mGHAsoTsWQ8v1jsc6rOdJgxgPPcvXW0QFUvIEtVG-0f1vKJrK9wyfhd5XUEZDI9oi3qQZFaPIthmMUVRWfYiLLJgzERTwl30GOJpnPRCiVleU93RMWDUq6No2k3sC4B0mqMIY6jvN5HRH4KX9zYky5k/s1200/linus-torvalds-rinde-herramienta-popular-linux-4313930.webp)
+
+
 ----------------
 ## Introduction (Moghadam) 
 
