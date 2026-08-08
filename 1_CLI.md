@@ -9,14 +9,13 @@ GUI--> YEk rabeti hast beyne user va computer va be shekle graphical hast --> Sh
 
 
 
-chera vaghty GUI hast ma cli estefade konim?
+chera vaghty GUI hast ma CLI estefade konim?
 1- Choon aksare server ha linux based hastan va cli based hastan
 2- Kh az abzar (tools) faghat dar halate cli sakhte shodan
 
 
 
-
-ba click mizani rooye Desktop , listesho mibine, chizi bekhay roosh click mikoni open mishe, chizi bekhy delete mikone, new folder -->< folder jadi misazi, file e jadid misazi
+GUI yani -->  ba click mizani rooye Desktop , listesho mibine, chizi bekhay roosh click mikoni open mishe, chizi bekhy delete mikone, new folder -->< folder jadi misazi, file e jadid misazi
 
 
 Command Line interface -->  CLI 
@@ -24,23 +23,23 @@ Command Line interface -->  CLI
 yani yek safe meshki jolomon bashe va ba oon kar konim...
 
 
-
-
 ![cli_terminal](/tutorial_figs/terminal.png)
 
 
-aksare developer ha az CLI estefade mikonan na GUI , vaghty migim server gerefte --> yek windowsi --> yek keshvari , yek sherkati , yek tabaghe ei , computer majazi dar ekhtiare shoma gharar mide.
-
+aksare developer ha az CLI estefade mikonan, na GUI , vaghty migim server gerefte --> yek windowsi --> yek keshvari , yek sherkati , yek tabaghe ei , computer majazi dar ekhtiare shoma gharar mide.
 
 
 shoma bayad CLI balad bashid k betonid behesh vasl shid.
 
 
-Mac --> Command + Space --> search terminal
 
+Baraye neveshtane CLI shoma yek mohit mikhahid : 
+
+Mac --> Command + Space --> search terminal
 
 windows --> CMD , Powershell
 
+vaghty baz mikonid chenin chizi mibinid : 
 
 ```bsh
 Last login: Wed Aug  5 20:10:10 on ttys000
@@ -48,16 +47,16 @@ Last login: Wed Aug  5 20:10:10 on ttys000
 
 ```
 
-
-pas bebinim koja hastim? az pwd estefade mikonim
+pas bebinim koja hastim? az dastoori bename **pwd** estefade mikonim
 
 ```bsh
 (base) apm@APMs-MacBook-Pro ~ % pwd
 /Users/apm
 ```
 
+In yani ma jaei hastim bename Users/apm va harchizi benevisim inja ejra mishe. pas agar bekhahim jaei berim masalan agar bekhahim berim desktop, dg mesle GUI injori nist rooye desktop click konim faghat bayad code bezanim masalan 
 
-bekhay jaei beri az cd estefade mikoni
+bekhay jaei beri az dastoore **cd** estefade mikoni
 
 
 ```bsh
@@ -65,18 +64,17 @@ bekhay jaei beri az cd estefade mikoni
 (base) apm@APMs-MacBook-Pro desktop % 
 ```
 
-mikhay ,motmaen shi?
+mikhay ,motmaen shi bebini kojaei?
 
 ```bsh
+(base) apm@APMs-MacBook-Pro desktop %  pwd
 /Users/apm/desktop
 ```
 
-
-
-
-yek command dastori hast bename 
+yek command dastori hast bename  **ls**
 
 baraye didaneh az ls estefade mikoni
+
 ```bsh
 (base) apm@APMs-MacBook-Pro desktop % ls
 179542454.png
@@ -101,21 +99,22 @@ L2.py
 
 ```
 
-
-
-
-mikhay yek fodler besazi
+mikhay yek fodler besazi kafie az dastoore **mkdir** estefade koni
 
 ```bsh
 (base) apm@APMs-MacBook-Pro desktop % mkdir new_folder
 ```
 
-bejaye new fodler harchizi bekahhi
-
-varedeszh bessahm --> cd
+bejaye new fodler harchizi bekhahi varedesh beshi az **cd** estefade mikoni
 
 
-pwd --> mige kojaei , cd --> mire , mkdir --> fodler misaze, ls --> listo neshonh mide
+pas ta inja :
+- pwd : mige kojaei
+- cd : mire dakhelesh
+- mkdir : folder misaze
+- ls / dir : liste file haro neshon mide
+
+
 
 ```bsh
 (base) apm@APMs-MacBook-Pro desktop % pwd
@@ -125,8 +124,7 @@ pwd --> mige kojaei , cd --> mire , mkdir --> fodler misaze, ls --> listo neshon
 /Users/apm/desktop/new_folder
 ```
 
-
-file chijori besazam? touch hast
+File mikhahi besazi? yek dastoor hast bename **touch**
 
 
 ```bsh
@@ -136,7 +134,9 @@ l1.py
 ```
 
 
-vrede folder1 shodam 3 ta file sakhtam
+varede folder1 shodam 3 ta file sakhtam
+
+
 ```bsh
 (base) apm@APMs-MacBook-Pro desktop % cd folder1
 (base) apm@APMs-MacBook-Pro folder1 % pwd
@@ -149,7 +149,7 @@ vrede folder1 shodam 3 ta file sakhtam
 l1.py		new_table.csv	req.txt
 
 ```
-baraye hazfe yek file az rm estfade mikonam
+baraye hazfe yek file az dastoore **rm** estfade mikonam
 
 ```bsh
 (base) apm@APMs-MacBook-Pro folder1 % rm l1.py
@@ -161,7 +161,9 @@ new_table.csv	req.txt
 new_table.csv
 ```
 
-baraye inke back bznm azon folder bayad cd .. bezanam
+baraye inke back bznm azoon folder bayad **cd ..** bezanam
+
+
 ```bsh
 (base) apm@APMs-MacBook-Pro folder1 % cd ..
 (base) apm@APMs-MacBook-Pro desktop % pwd
@@ -169,25 +171,26 @@ baraye inke back bznm azon folder bayad cd .. bezanam
 ```
 
 
-hazfe folder az rm estefade nmikoni az rm -rf estefade mikoni
+hazfe folder az **rm** estefade nmikoni az **rm -rf** estefade mikoni
 
 ```bsh
 (base) apm@APMs-MacBook-Pro desktop % rm -rf folder1
 ```
 
 
+yek dastoor darim bename **vim**
 
 vim --> NA TANHA file misaze balke ejaze mdie, too file chizi benevisi
 
 
 
-touch l1.py
+touch l1.py --> in faghat file e khali misaze
 
 vim l1.py --> I minevisi harchi mikhay mitoni benvisi
 badesh mizani ESC -->  :wq  enter -->na taha filet skhte mishe balek chizaye tosham hast
 
 
-cat 
+cat  --> ba in mitoni dakhele file ro bebini chi hast
  
 
 ```bsh
@@ -203,6 +206,7 @@ print('salam')
 
 
 
+-----------------
 ## Summary 
 
 shoma varede terminal (mac) , powershell , cmd (windows) mishid . yek safe meshki hast behesh migan bsh (Bash) -->inja yek dargahi (gate) ke mostaghim ba core (hasteye) laptabeton harf bznid bedone niaz b GUI (rabete graphici) 
@@ -215,7 +219,7 @@ pwd --> kojam --> mige Users/apm
 cd name --> mire oon folderi k mikhahi <br>
 cd .. --> barmigarde az jaei k hasti
 
-mkdir name --> yek folder misaze
+mkdir name --> yek folder misaze<br>
 cd name --> varede oon fodler mishi
 
 touch name.format ---> touch l1.py --> yek file misaze<br>
