@@ -271,7 +271,6 @@ age versiono inaro behet dad yani doros nasb shode
 ----------
 # Amoozeshe Git
 
-
 Pas ghabl az inke bekhahid yad begirid k Git che shekli hast , shoma bayad aval dakhele terminal ya git bsh benevisid
 
 ```bsh
@@ -279,7 +278,6 @@ git --version
 ```
 
 va agar version dad khialeton rahat bashe ke git ro nasb kardid va edame bedid b amoozeshetoon
-
 
 
 ----
@@ -332,7 +330,6 @@ chiz haee mesle .git .gitignore .env .env_exampl .claud ,... -- nemiare too ls ,
 
 
 
-
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % cd .git
 
@@ -344,13 +341,16 @@ description	objects
 ```
 
 
+
 Hala bar migardim bebinim kojaeim? tooye project_f hastim
+
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % pwd
 /Users/apm/desktop/project_f
 
 ```
+
 
 Bia yek file besaz bename a1.py 
 
@@ -363,12 +363,10 @@ a1.py
 
 
 
-
-
 ----
 ## git status 
 
-ch chizhaee taghir krdn ya sakhte shodn ya remove shodan , shoma inaro sabt nakardid 
+ch chizhaee taghir krdn ya sakhte shodn ya remove shodan, shoma inaro sabt nakardid 
 
 
 ```bsh
@@ -401,9 +399,6 @@ Bebinid Kolan vaziate file ha injorie, shoma se halat dariid ya Untracked (yani 
 
 
 ![three_stage](https://content-media-cdn.codefinity.com/courses/7533d91f-0a23-44a3-afc7-c84d5072e189/section_1/chapter_9/files_classification.png?w=3840&q=75)
-
-
-
 
 
 
@@ -529,8 +524,6 @@ Changes to be committed:
 ```
 
 
-
-
 avale foldereton --> git init --> baraye yekbar
 
 too laptob hexzaran folder darid , hame fodlera daran kareshono mikonan
@@ -545,7 +538,11 @@ git status --> git add . ---> git commit -m ''
 ----
 ## git log
 
-mikhahi tarikhche ro bbini --> git log
+Hamontor goftim harchi sakhtid, harchi delete kardid harchizi taghir kard hamaro shoma commit kardid (sabt kardid) , pas koja beram bebinam? behesh migan tarikhche . 
+
+
+
+Mikhahi tarikhche ro bbini --> Mitoni bezani --> git log
 
 
 ```bsh
@@ -564,11 +561,10 @@ Date:   Wed Aug 5 21:27:47 2026 +0330
 
 ```
 
+shoma yekseri adad mibini , har chizi ke commit mikoni yek adade yekta (unique) barash dar nazar gerefte mishe mesle shomare meli , va tarikhesh , commentesh, nevisandash hamashon sabt shode.
 
-ye adad hash --> in adad unique yekta baraye in karie k anjam dadam (shomare meli)
+hala mikhay beri too khode oon commit bebini chekhabare? kafie bezani git diff (oon adade)
 
-
-mikhahim oon taghiro bbinim az git diff estefade mikonim
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % git diff 3cd82c4f0d4adc81a398b4be956d536d74b3a5f0
@@ -584,35 +580,14 @@ index e69de29..d504937 100644
 
 
 
-```bsh
-(base) apm@APMs-MacBook-Pro desktop % git status
-fatal: not a git repository (or any of the parent directories): .git
-
-
-```
-
-
-har fodleri b sorate pish farz git negahesh nemikone -> git init bezanid
-
-dastoorate git ro bayad too hamon fodler bznid na bironesh
 
 
 
+## Another example 
 
-```bsh
-(base) apm@APMs-MacBook-Pro project_f % git status
-On branch main
-nothing to commit, working tree clean
-
-```
-
-rsaftam a1.py va taghiri dadam --> bznm git status
-
-
-
+Dobare yek mesale dige mizanim
 
 [untracked] ----(add)---> stage ----(commit) --> committed
-
 
 
 ```bsh
@@ -641,7 +616,7 @@ Changes to be committed:
 
 ```
 
-sabt mishe 0--> mkire too history ---> unique id mikhorre, esme , timet mikhore, tozihet
+sabt mishe --> mire too history ---> unique id mikhorre, esme , timet mikhore, tozihet
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % git commit -m '5 bar print salam shod'
@@ -653,12 +628,12 @@ nothing to commit, working tree clean
 ```
 
 
-
-beram tarikhche bbinm
+Beraam Tarikhche bebinam
 
 
 ```bsh
 (base) apm@APMs-MacBook-Pro project_f % git log
+
 commit 381e8b708ecaa81ebac4e73afbe32c7cc7bf63cc (HEAD -> main)
 Author: APMaii <ali.pilehvarmeibody@studenti.polito.it>
 Date:   Wed Aug 5 21:36:57 2026 +0330
@@ -679,9 +654,8 @@ Date:   Wed Aug 5 21:27:47 2026 +0330
 ```
 
 
+avalin filam a1.py khali bode , dota nevshte
 
-
-avalin filam a1.py khali bodde , dota neevshte
 
 
 ```bsh
@@ -695,10 +669,6 @@ index e69de29..7988e1a 100644
 +       print('salam')
 \ No newline at end of file
 ```
-
-
-
-
 
 
 
@@ -718,20 +688,23 @@ index d504937..7988e1a 100644
 ```
 
 
+
+
 ---------------
-# github
+# Amoozeshe github
 
 
-hameye ina rooye laptabete va khob dari manage mikoni file
+Ta alan faghat dar morede laptobe shomast , yani shoma vaghty yek porozhe mizani tooye laptobete. be laptobet migan 'local' va in yani localete.
 
 
 
-mikhay kole folder fila , commit haro dar yek website bezari , k hame (cloud) dastresi pedya konan behesh .
+Hala fek kon mikhay beri too ye sherkat kar koni, ya ba dostat kar koni , ya yek team dari . chijori kole porozhe beyne hame eshterak bezarid? 
 
+shoma niaz b yek markaze asli dari ke behesh migan **HUB** . 
 
-company , ba company trf kar koni , kar kone  , roo yechizi kar konid ,...
+choon ba **git** kar mikonid behesh migan **Git hub** .
 
-
+pas yadeton bashe **git** yek abzare ke bahash folder haro modiriat kardid, **github** yek website hast k ejaze mide file haton ro ba estefade az **git** befredstido anjam bedid va zakhire kone.
 
 
 GitHub --> Hub i baraye git.
@@ -741,6 +714,7 @@ git --> tool (abzare)
 github--> hub k git kar mikoni
 
 
+Websitesh ine 
 
 https://github.com
 
@@ -750,7 +724,7 @@ vaghty vared mishi, oon samte rast bala rooye sign up mizani
 ![home](/tutorial_figs/github_home.png)
 
 
-badesh sign up mikoni yani sabte nam mikoni
+badesh sign up (sabte nam) mikoni yani sabte nam mikoni . 
 
 sign in --> yek email --> verification (code) 
 
@@ -758,10 +732,7 @@ emailet--> peydaah mikoni --> va avred --> vared mishi (spam ,...)
 
 login --> in dg mimone
 
-
-
 ![signup](/tutorial_figs/github_signup.png)
-
 
 
 
@@ -769,7 +740,6 @@ login --> in dg mimone
 dg azinbebasd harmoghe ino mizani miri too safeye home 
 
 https://github.com
-
 
 
 github yek profiel dare miri toosh mitoni taghriat bdi , setting dare --> 
@@ -788,8 +758,11 @@ repo --> directory (folder) --> yek file hat k rooye github hast
 
 
 
-#------------
-# Halate 1 -------------
+------------
+------------
+------------
+------------
+# Halate 1 
 
 kole fodldereto tooye laptabet sakhti va miikhay az laptab befresi b github 
 
@@ -944,8 +917,12 @@ To https://github.com/APMaii/project_f.git
 
 
 
+------------
+------------
+------------
+------------
 
-# halate 2 -------------
+# halate 2 
 yek chizi rooye github hast va mikhay begirish va roosh kar koni
 
 mikhay biarish --> git clone --> clone krdn
@@ -1004,8 +981,9 @@ inja file photo --> yadbegiuri ---> password dar biri
 ----------------------
 ----------------------
 ----------------------
+#
 
-#1--> file haye tadris ro dashte bashid 
+1--> file haye tadris ro dashte bashid 
 
 github --> url ro dar miarid
 
