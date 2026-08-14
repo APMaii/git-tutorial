@@ -40,6 +40,17 @@ Mac --> Command + Space --> search terminal
 
 windows --> CMD , Powershell
 
+
+Yadeton bashe powershell kh ghavitar va bishtar shabihe terminal hast ta CMD , 
+
+
+Agar bekahhid tamame in dastoorate terminal ro bezanid dakhele windows mitoni az khode barnameye *git bsh* estefade konid. 
+
+
+
+
+
+
 vaghty baz mikonid chenin chizi mibinid : 
 
 ```bsh
@@ -55,6 +66,18 @@ pas bebinim koja hastim? az dastoori bename **pwd** estefade mikonim
 /Users/apm
 ```
 
+
+Tooye CMD ma pwd nadarim va bayad az dastore zir bezani
+
+```bsh
+cd
+```
+
+ama powershell pwd dare va mitoni estefade koni.
+
+
+
+
 In yani ma jaei hastim bename Users/apm va harchizi benevisim inja ejra mishe. pas agar bekhahim jaei berim masalan agar bekhahim berim desktop, dg mesle GUI injori nist rooye desktop click konim faghat bayad code bezanim masalan 
 
 bekhay jaei beri az dastoore **cd** estefade mikoni
@@ -64,6 +87,9 @@ bekhay jaei beri az dastoore **cd** estefade mikoni
 (base) apm@APMs-MacBook-Pro ~ % cd desktop
 (base) apm@APMs-MacBook-Pro desktop % 
 ```
+
+In command too powershell va CMD yeksan hast .
+
 
 mikhay ,motmaen shi bebini kojaei?
 
@@ -100,6 +126,13 @@ L2.py
 
 ```
 
+
+in dastoore ls ro ham terminal dare ham powershell ama baraye cmd bayad az **dir** estefade konid.
+
+
+
+
+
 mikhay yek fodler besazi kafie az dastoore **mkdir** estefade koni
 
 ```bsh
@@ -135,6 +168,28 @@ l1.py
 ```
 
 
+CMD va terminal touch ro nadaan va mitonid injori estefade konid
+
+baraye sakhte file tooye powershell
+
+```bsh
+New-Tterm a.py
+```
+
+baraye dakhele CMD 
+
+```bsh
+type nul > a.py
+```
+
+
+behjaye a.py mitonid har file e k mikhahid benevisid.
+
+
+
+
+
+
 varede folder1 shodam 3 ta file sakhtam
 
 
@@ -162,6 +217,16 @@ new_table.csv	req.txt
 new_table.csv
 ```
 
+
+rm ham baraye teminal hast ham baraye powershell ama baraye CMD bayad az commande zir estefade konid
+
+```bsh
+del a.py
+```
+
+
+
+
 baraye inke back bznm azoon folder bayad **cd ..** bezanam
 
 
@@ -178,8 +243,33 @@ hazfe folder az **rm** estefade nmikoni az **rm -rf** estefade mikoni
 (base) apm@APMs-MacBook-Pro desktop % rm -rf folder1
 ```
 
+tooye powershell bejaye rm -rf bayad az command zir estefade konid
+
+```bsh
+Remove-Item folder -Recurse -Force
+```
+
+dakehle CMD bayd bazanid
+
+```bsh
+rmdir /s /q folder
+```
+
+bejaye folder , esme fodler ro beznid
+
+
+
+
+
+
+
+
 
 yek dastoor darim bename **vim**
+
+dakhele terminal besorate by default nasb hast vim ama tooye powershell va cmd baayd nasb konid
+
+
 
 vim --> NA TANHA file misaze balke ejaze mdie, too file chizi benevisi
 
@@ -343,22 +433,25 @@ tooye deksotp ba touch misazam badsh baz mikonm o toosh minevisak
 ------
 # Overview
 
-| Command | Example | che mikonad? |
-|---------|---------|--------------|
-| `pwd` | `pwd` | neshan midahad kojaeid |
-| `cd` | `cd desktop` | mire be folderi k mikhahid |
-| `cd ..` | `cd ..` | bar migarde ye folder aghab|
-| `ls` | `ls` | list mikone tamame folder haye jaei ke toosh hastid|
-| `mkdir` | `mkdir project1` | new folder misaze|
-| `touch` | `touch l1.py` | yek file e khali misaze |
-| `vim` | `vim l1.py` | baz mikone ya misaze yek file va mitoni benevisi (`i` → benevis → `ESC` → `:wq` enter) |
-| `cat` | `cat l1.py` | namayesh mide dakhele yek file ro  |
-| `rm` | `rm l1.py` |yek file ro delete mikone |
-| `rm -rf` | `rm -rf folder1` | yek folder ba tamame file haye toosho delete mikone |
-| `python3` | `python3 l1.py` | run mikone yek python file ro  |
-| `python3 -m venv` | `python3 -m venv fanavari` | yek mohit misaze |
-| `source .../activate` | `source fanavari/bin/activate` | oon mohit ro activate mikone (faal mikone)|
-| `deactivate` | `deactivate` | oon mohit ro deactivate miikne |
+
+| Mac / Linux | PowerShell | CMD | Example | che mikonad? |
+|-------------|------------|-----|---------|--------------|
+| `pwd` | `pwd` / `Get-Location` | `cd` | `pwd` | neshan midahad kojaeid |
+| `cd` | `cd` | `cd` | `cd desktop` | mire be folderi k mikhahid |
+| `cd ..` | `cd ..` | `cd ..` | `cd ..` | bar migarde ye folder aghab |
+| `ls` | `ls` / `Get-ChildItem` | `dir` | `ls` | list mikone tamame file va folder haye jaei ke toosh hastid |
+| `mkdir` | `mkdir` / `New-Item -ItemType Directory` | `mkdir` / `md` | `mkdir project1` | new folder misaze |
+| `touch` | `New-Item` | `type nul >` | Mac: `touch l1.py` <br> PowerShell: `New-Item l1.py -ItemType File` <br> CMD: `type nul > l1.py` | yek file khali misaze |
+| `vim` | `vim`* | `vim`* | `vim l1.py` | file ro baz mikone va mitoni edit koni |
+| `cat` | `cat` / `Get-Content` | `type` | Mac: `cat l1.py` <br> PowerShell: `Get-Content l1.py` <br> CMD: `type l1.py` | mohtaviate dakhele file ro neshan mide |
+| `rm` | `rm` / `Remove-Item` | `del` | Mac: `rm l1.py` <br> PowerShell: `Remove-Item l1.py` <br> CMD: `del l1.py` | yek file ro delete mikone |
+| `rm -rf` | `Remove-Item -Recurse -Force` | `rmdir /s /q` | Mac: `rm -rf folder1` <br> PowerShell: `Remove-Item folder1 -Recurse -Force` <br> CMD: `rmdir /s /q folder1` | yek folder ba tamame file haye dakhelesh ro delete mikone |
+| `python3` | `python` / `py` | `python` / `py` | Mac: `python3 l1.py` <br> Windows: `python l1.py` | yek Python file ro run mikone |
+| `python3 -m venv` | `python -m venv` | `python -m venv` | Mac: `python3 -m venv fanavari` <br> Windows: `python -m venv fanavari` | yek virtual environment misaze |
+| `source .../activate` | `.\fanavari\Scripts\Activate.ps1` | `fanavari\Scripts\activate.bat` | Mac: `source fanavari/bin/activate` <br> PowerShell: `.\fanavari\Scripts\Activate.ps1` <br> CMD: `fanavari\Scripts\activate.bat` | virtual environment ro activate mikone |
+| `deactivate` | `deactivate` | `deactivate` | `deactivate` | virtual environment ro deactivate mikone |
+
+> `vim` be soorate default dar Windows mojood nist. Agar Vim nasb shode bashad, ham dar PowerShell va ham CMD mitavanid az `vim` estefade konid.
 
 
 
